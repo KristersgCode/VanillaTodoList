@@ -1,0 +1,68 @@
+.done {
+  color: red;
+  text-decoration: line-through;
+}
+
+.taskAdder {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+#task-list {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: rgb(212, 212, 212);
+  height: 30px;
+  width: 300px;
+  border-radius: 7px;
+}
+li:hover {
+  cursor: pointer;
+}
+
+.remove {
+  margin-left: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  color: #383636;
+}
+
+button:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+input {
+  height: 30px;
+  background-color: #ffffff;
+}
+
+#add-button {
+  background-color: #ff0000;
+  width: 100px;
+}
