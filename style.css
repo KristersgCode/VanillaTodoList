@@ -16,13 +16,10 @@ body {
 
 .container {
   background-image: linear-gradient(
-      to bottom,
-      rgba(43, 73, 107, 0.9),
-      rgba(53, 102, 158, 0.9)
-    ),
-    url(working.svg);
-  background-repeat: no-repeat;
-  background-size: 300px 166px;
+    to bottom,
+    rgba(43, 73, 107, 0.9),
+    rgba(53, 102, 158, 0.9)
+  );
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 300px;
