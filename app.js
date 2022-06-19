@@ -34,11 +34,11 @@ const renderTask = () => {
   let counter = 0;
   const taskListElementArray = taskList.map(
     (task) =>
-      `<div class="flex"><li data-id="${counter++}" class="${
+      `<div class="bg"><div class="flex"><li data-id="${counter++}" class="${
         task.done ? "done" : null
       }">${
         task.value
-      }</li><button class="remove"><i class="fa-solid fa-trash fa-lg"></i></button></div>`
+      }</li><button class="remove"><i class="fa-solid fa-trash fa-lg"></i></button></div></div>`
   );
   taskListElement.innerHTML = taskListElementArray.join("");
 };

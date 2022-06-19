@@ -17,14 +17,20 @@
         <h1>Todo</h1>
       </div>
       <form class="taskAdder">
-        <input type="text" name="task" placeholder="New Task Item" id="input" />
+        <input
+          class="placeholder"
+          type="text"
+          name="task"
+          placeholder="New Task Item"
+          id="input"
+        />
         <input type="submit" value="➕ Add" id="add-button" />
       </form>
-      <div class="flex">
-        <ul id="task-list">
-          <!-- Šeit izvadam datus no Localstorage -->
-        </ul>
-      </div>
+
+      <ul id="task-list">
+        <!-- Šeit izvadam datus no Localstorage -->
+      </ul>
+      <div class="container-bottom"></div>
     </div>
     <script src="app.js"></script>
   </body>

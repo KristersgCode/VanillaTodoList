@@ -1,33 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  color: #5c5c5c;
+}
+
 .done {
   color: red;
   text-decoration: line-through;
 }
 
+.container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(43, 73, 107, 0.9),
+      rgba(53, 102, 158, 0.9)
+    ),
+    url(/img/working.svg);
+  background-repeat: no-repeat;
+  background-size: 300px 166px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 300px;
+}
+
 .taskAdder {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  padding-bottom: 40px;
 }
 
 .header {
   display: flex;
   justify-content: center;
+  color: #ffffff;
 }
 
 #task-list {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  margin-bottom: 0px;
 }
 
 li {
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  background-color: rgb(212, 212, 212);
   height: 30px;
-  width: 300px;
-  border-radius: 7px;
+  width: 200px;
+  border-bottom: 2px solid #35669e;
 }
 li:hover {
   cursor: pointer;
@@ -41,15 +65,43 @@ li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  width: 90%;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
+.container-bottom {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(53, 102, 158, 0.9),
+    rgba(41, 81, 127, 0.9)
+  );
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.bg {
+  background-color: #ffffff;
+  border-left: solid 1px gray;
+  border-right: solid 1px gray;
+  background-size: 30%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
 button {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 30px;
   width: 30px;
-  color: #383636;
+  color: #ffffff;
+  background-color: #35669e;
+  border-radius: 3px;
+  border: none;
 }
 
 button:hover {
@@ -63,6 +115,32 @@ input {
 }
 
 #add-button {
-  background-color: #ff0000;
-  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5px;
+  height: 30px;
+  width: 50px;
+  margin-left: 20px;
+  color: #383636;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+}
+
+#add-button:hover {
+  background-color: #a8b6c7;
+  cursor: pointer;
+}
+
+.placeholder {
+  width: 180px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.placeholder:hover {
+  cursor: pointer;
 }
